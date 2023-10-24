@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.label7 = new System.Windows.Forms.Label();
             this.scorePanel = new System.Windows.Forms.Panel();
             this.currentScoreLbl = new System.Windows.Forms.Label();
@@ -457,6 +458,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.QuestionNumLbl);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "IdentifyingAreasScreen";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.QuitBtn1 = new System.Windows.Forms.Button();
             this.Find_Call_Numbers = new System.Windows.Forms.Button();
             this.Identifying_Areas = new System.Windows.Forms.Button();
@@ -102,6 +103,7 @@
             this.Controls.Add(this.Identifying_Areas);
             this.Controls.Add(this.Replacing_Books);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

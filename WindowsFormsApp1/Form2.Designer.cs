@@ -64,7 +64,8 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.BackBtn1 = new System.Windows.Forms.Button();
             this.GameProgressBar = new System.Windows.Forms.ProgressBar();
             this.CurrentScoreLbl = new System.Windows.Forms.Label();
@@ -80,12 +81,12 @@ namespace WindowsFormsApp1
             this.UpListBtn = new System.Windows.Forms.Button();
             this.ResultListView = new System.Windows.Forms.ListView();
             this.ScorePanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.ScorePanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -265,7 +266,7 @@ namespace WindowsFormsApp1
             this.ResultListView.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResultListView.HideSelection = false;
             this.ResultListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem11});
+            listViewItem1});
             this.ResultListView.Location = new System.Drawing.Point(559, 65);
             this.ResultListView.Margin = new System.Windows.Forms.Padding(2);
             this.ResultListView.MinimumSize = new System.Drawing.Size(91, 192);
@@ -292,6 +293,15 @@ namespace WindowsFormsApp1
             this.ScorePanel.Size = new System.Drawing.Size(122, 54);
             this.ScorePanel.TabIndex = 55;
             this.ScorePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ScorePanel_Paint_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 56;
             // 
             // label4
             // 
@@ -340,15 +350,6 @@ namespace WindowsFormsApp1
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.Form2_Load);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 56;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +368,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.NextListBtn);
             this.Controls.Add(this.ResultListView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ScorePanel.ResumeLayout(false);
