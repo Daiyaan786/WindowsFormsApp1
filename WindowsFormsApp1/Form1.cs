@@ -59,8 +59,10 @@ namespace WindowsFormsApp1
         private void Identifying_Areas_Click(object sender, EventArgs e)
         {
 
-            //Message box Coming soon
-            MessageBox.Show("404!", "COMING SOON", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+         
+            Form3 f8= new Form3();
+            f8.Show();
+
         }
 
         private void Find_Call_Numbers_Click(object sender, EventArgs e)

@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
     {
         private List<Dewey_Decimal> deweyList = new List<Dewey_Decimal>();
         private List<Dewey_Decimal> sortedList = new List<Dewey_Decimal>();
-        private int score;
+       // private int score;
         private Random random = new Random();
         //ToCharArray 
         private Char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
