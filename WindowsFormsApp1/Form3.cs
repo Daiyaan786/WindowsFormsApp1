@@ -250,11 +250,19 @@ namespace WindowsFormsApp1
         // send user back to main page
         private void Return_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form1 mp1 = new Form1();
-            mp1.Show();
+            this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {this.Close();
 
+            Form3 f8 = new Form3();
+            f8.Show();
+        }
+
+        private void QuestionNumLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

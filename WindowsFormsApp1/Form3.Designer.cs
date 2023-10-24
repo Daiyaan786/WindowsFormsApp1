@@ -32,8 +32,6 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.NextQuestionButton = new System.Windows.Forms.Button();
-            this.Return = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.scorePanel = new System.Windows.Forms.Panel();
             this.currentScoreLbl = new System.Windows.Forms.Label();
@@ -58,41 +56,24 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.answer1ListBox = new System.Windows.Forms.ListBox();
             this.answerListBox = new System.Windows.Forms.ListBox();
+            this.Return = new System.Windows.Forms.Button();
+            this.NextQuestionButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.scorePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.questionsPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // NextQuestionButton
-            // 
-            this.NextQuestionButton.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Bold);
-            this.NextQuestionButton.Location = new System.Drawing.Point(646, 339);
-            this.NextQuestionButton.Name = "NextQuestionButton";
-            this.NextQuestionButton.Size = new System.Drawing.Size(109, 40);
-            this.NextQuestionButton.TabIndex = 39;
-            this.NextQuestionButton.Text = "Next Question";
-            this.NextQuestionButton.UseVisualStyleBackColor = true;
-            // 
-            // Return
-            // 
-            this.Return.Font = new System.Drawing.Font("Book Antiqua", 12F);
-            this.Return.Location = new System.Drawing.Point(32, 72);
-            this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(109, 40);
-            this.Return.TabIndex = 38;
-            this.Return.Text = "Return";
-            this.Return.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(686, 149);
+            this.label7.Location = new System.Drawing.Point(306, 324);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 16);
-            this.label7.TabIndex = 37;
+            this.label7.TabIndex = 31;
             this.label7.Text = "Score:";
             // 
             // scorePanel
@@ -104,11 +85,11 @@ namespace WindowsFormsApp1
             this.scorePanel.Controls.Add(this.totalScoreLbl);
             this.scorePanel.Controls.Add(this.totalScoreTxtLbl);
             this.scorePanel.Controls.Add(this.currentScoreTxtLbl);
-            this.scorePanel.Location = new System.Drawing.Point(646, 167);
+            this.scorePanel.Location = new System.Drawing.Point(355, 324);
             this.scorePanel.Margin = new System.Windows.Forms.Padding(2);
             this.scorePanel.Name = "scorePanel";
             this.scorePanel.Size = new System.Drawing.Size(122, 54);
-            this.scorePanel.TabIndex = 36;
+            this.scorePanel.TabIndex = 30;
             // 
             // currentScoreLbl
             // 
@@ -161,27 +142,29 @@ namespace WindowsFormsApp1
             this.QuestionNumLbl.BackColor = System.Drawing.Color.White;
             this.QuestionNumLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QuestionNumLbl.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold);
-            this.QuestionNumLbl.Location = new System.Drawing.Point(324, 142);
+            this.QuestionNumLbl.Location = new System.Drawing.Point(355, 12);
             this.QuestionNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.QuestionNumLbl.Name = "QuestionNumLbl";
-            this.QuestionNumLbl.Size = new System.Drawing.Size(95, 23);
-            this.QuestionNumLbl.TabIndex = 35;
-            this.QuestionNumLbl.Text = "Question 1:";
+            this.QuestionNumLbl.Size = new System.Drawing.Size(69, 23);
+            this.QuestionNumLbl.TabIndex = 28;
+            this.QuestionNumLbl.Text = "PART 2";
+            this.QuestionNumLbl.Click += new System.EventHandler(this.QuestionNumLbl_Click);
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.questionsPanel);
             this.panel1.Controls.Add(this.answerListBox);
-            this.panel1.Location = new System.Drawing.Point(127, 174);
+            this.panel1.Location = new System.Drawing.Point(107, 114);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(504, 205);
-            this.panel1.TabIndex = 34;
+            this.panel1.TabIndex = 26;
             // 
             // label6
             // 
@@ -193,9 +176,9 @@ namespace WindowsFormsApp1
             this.label6.Location = new System.Drawing.Point(343, 18);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 23);
+            this.label6.Size = new System.Drawing.Size(62, 23);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Answers";
+            this.label6.Text = "BOX B";
             // 
             // label5
             // 
@@ -207,14 +190,15 @@ namespace WindowsFormsApp1
             this.label5.Location = new System.Drawing.Point(82, 18);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 23);
+            this.label5.Size = new System.Drawing.Size(63, 23);
             this.label5.TabIndex = 22;
-            this.label5.Text = "Questions";
+            this.label5.Text = "BOX A";
             // 
             // questionsPanel
             // 
             this.questionsPanel.AllowDrop = true;
             this.questionsPanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.questionsPanel.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.questionsPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.questionsPanel.ColumnCount = 3;
             this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
@@ -256,6 +240,9 @@ namespace WindowsFormsApp1
             this.answer4ListBox.Name = "answer4ListBox";
             this.answer4ListBox.Size = new System.Drawing.Size(139, 18);
             this.answer4ListBox.TabIndex = 9;
+            this.answer4ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
+            this.answer4ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
+            this.answer4ListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Answer_MouseDown);
             // 
             // answer3ListBox
             // 
@@ -270,6 +257,9 @@ namespace WindowsFormsApp1
             this.answer3ListBox.Name = "answer3ListBox";
             this.answer3ListBox.Size = new System.Drawing.Size(138, 18);
             this.answer3ListBox.TabIndex = 8;
+            this.answer3ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
+            this.answer3ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
+            this.answer3ListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Answer_MouseDown);
             // 
             // answer2ListBox
             // 
@@ -284,6 +274,9 @@ namespace WindowsFormsApp1
             this.answer2ListBox.Name = "answer2ListBox";
             this.answer2ListBox.Size = new System.Drawing.Size(138, 18);
             this.answer2ListBox.TabIndex = 7;
+            this.answer2ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
+            this.answer2ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
+            this.answer2ListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Answer_MouseDown);
             // 
             // label4
             // 
@@ -394,6 +387,9 @@ namespace WindowsFormsApp1
             this.answer1ListBox.Name = "answer1ListBox";
             this.answer1ListBox.Size = new System.Drawing.Size(138, 18);
             this.answer1ListBox.TabIndex = 6;
+            this.answer1ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
+            this.answer1ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
+            this.answer1ListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Answer_MouseDown);
             // 
             // answerListBox
             // 
@@ -409,20 +405,61 @@ namespace WindowsFormsApp1
             this.answerListBox.Name = "answerListBox";
             this.answerListBox.Size = new System.Drawing.Size(224, 146);
             this.answerListBox.TabIndex = 6;
+            this.answerListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
+            this.answerListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
+            this.answerListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Answer_MouseDown);
+            // 
+            // Return
+            // 
+            this.Return.BackColor = System.Drawing.Color.Transparent;
+            this.Return.Font = new System.Drawing.Font("Book Antiqua", 12F);
+            this.Return.Location = new System.Drawing.Point(12, 12);
+            this.Return.Name = "Return";
+            this.Return.Size = new System.Drawing.Size(109, 40);
+            this.Return.TabIndex = 32;
+            this.Return.Text = "Return";
+            this.Return.UseVisualStyleBackColor = false;
+            this.Return.Click += new System.EventHandler(this.Return_Click);
+            // 
+            // NextQuestionButton
+            // 
+            this.NextQuestionButton.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Bold);
+            this.NextQuestionButton.Location = new System.Drawing.Point(499, 324);
+            this.NextQuestionButton.Name = "NextQuestionButton";
+            this.NextQuestionButton.Size = new System.Drawing.Size(109, 40);
+            this.NextQuestionButton.TabIndex = 33;
+            this.NextQuestionButton.Text = "Next Question";
+            this.NextQuestionButton.UseVisualStyleBackColor = true;
+            this.NextQuestionButton.Click += new System.EventHandler(this.NextQuestionButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.Location = new System.Drawing.Point(107, 319);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 45);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "RESTART ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.NextQuestionButton);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.scorePanel);
             this.Controls.Add(this.QuestionNumLbl);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form3";
-           this.Load += new System.EventHandler(this.Form3_Load);
+            this.Text = "IdentifyingAreasScreen";
             this.scorePanel.ResumeLayout(false);
             this.scorePanel.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -436,8 +473,6 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.Button NextQuestionButton;
-        private System.Windows.Forms.Button Return;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel scorePanel;
         private System.Windows.Forms.Label currentScoreLbl;
@@ -462,7 +497,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox answer1ListBox;
         private System.Windows.Forms.ListBox answerListBox;
-
-        public EventHandler Form3_Load { get; private set; }
+        private System.Windows.Forms.Button Return;
+        private System.Windows.Forms.Button NextQuestionButton;
+        private System.Windows.Forms.Button button1;
     }
 }

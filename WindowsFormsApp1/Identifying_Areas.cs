@@ -19,16 +19,16 @@ namespace WindowsFormsApp1
         //add call numbers and their descriptions to the dictionary
         public Identifying_Areas()
         {
-            DeweyDecimalsDictionary.Add("000-099", "General Works");
-            DeweyDecimalsDictionary.Add("100-199", "Philosophy and Psychology");
+            DeweyDecimalsDictionary.Add("000-099", "General Knowledge");
+            DeweyDecimalsDictionary.Add("100-199", "Philosophy & Psychology");
             DeweyDecimalsDictionary.Add("200-299", "Religion");
             DeweyDecimalsDictionary.Add("300-399", "Social Sciences");
-            DeweyDecimalsDictionary.Add("400-499", "Language");
-            DeweyDecimalsDictionary.Add("500-599", "Natural Sciences and Mathematics");
+            DeweyDecimalsDictionary.Add("400-499", "Languages");
+            DeweyDecimalsDictionary.Add("500-599", "Science");
             DeweyDecimalsDictionary.Add("600-699", "Technology");
-            DeweyDecimalsDictionary.Add("700-799", "The Arts");
-            DeweyDecimalsDictionary.Add("800-899", "Literature and Rhetoric");
-            DeweyDecimalsDictionary.Add("900-999", "History, Biography, and Geography");
+            DeweyDecimalsDictionary.Add("700-799", "Arts & Recreation");
+            DeweyDecimalsDictionary.Add("800-899", "Literature");
+            DeweyDecimalsDictionary.Add("900-999", "History & Geography");
         }
 
 
