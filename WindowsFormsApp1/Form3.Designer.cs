@@ -244,7 +244,7 @@ namespace WindowsFormsApp1
             // 
             this.answer4ListBox.AllowDrop = true;
             this.answer4ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.answer4ListBox.BackColor = System.Drawing.Color.LightBlue;
+            this.answer4ListBox.BackColor = System.Drawing.Color.Blue;
             this.answer4ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer4ListBox.FormattingEnabled = true;
             this.answer4ListBox.ItemHeight = 18;
@@ -261,7 +261,7 @@ namespace WindowsFormsApp1
             // 
             this.answer3ListBox.AllowDrop = true;
             this.answer3ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.answer3ListBox.BackColor = System.Drawing.Color.LightBlue;
+            this.answer3ListBox.BackColor = System.Drawing.Color.Blue;
             this.answer3ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer3ListBox.FormattingEnabled = true;
             this.answer3ListBox.ItemHeight = 18;
@@ -278,7 +278,7 @@ namespace WindowsFormsApp1
             // 
             this.answer2ListBox.AllowDrop = true;
             this.answer2ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.answer2ListBox.BackColor = System.Drawing.Color.LightBlue;
+            this.answer2ListBox.BackColor = System.Drawing.Color.Blue;
             this.answer2ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer2ListBox.FormattingEnabled = true;
             this.answer2ListBox.ItemHeight = 18;
@@ -407,7 +407,7 @@ namespace WindowsFormsApp1
             // 
             this.answer1ListBox.AllowDrop = true;
             this.answer1ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.answer1ListBox.BackColor = System.Drawing.Color.LightBlue;
+            this.answer1ListBox.BackColor = System.Drawing.Color.Blue;
             this.answer1ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer1ListBox.FormattingEnabled = true;
             this.answer1ListBox.ItemHeight = 18;
@@ -424,7 +424,7 @@ namespace WindowsFormsApp1
             // 
             this.answerListBox.AllowDrop = true;
             this.answerListBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.answerListBox.BackColor = System.Drawing.Color.LightBlue;
+            this.answerListBox.BackColor = System.Drawing.Color.Blue;
             this.answerListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.answerListBox.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerListBox.ForeColor = System.Drawing.Color.Yellow;
@@ -524,9 +524,12 @@ namespace WindowsFormsApp1
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(168, 27);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Yellow;
+            this.label9.Location = new System.Drawing.Point(151, 15);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.Size = new System.Drawing.Size(68, 20);
             this.label9.TabIndex = 38;
             this.label9.Text = "Timer : ";
             this.label9.Click += new System.EventHandler(this.label9_Click);
