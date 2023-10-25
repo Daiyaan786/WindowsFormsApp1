@@ -61,8 +61,8 @@ namespace WindowsFormsApp1
         private void Identifying_Areas_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("So The game is a drage and drop from Box B to Box A and when pressed next question itll calculate ypur score \n" +
-                "Here are the Game Answeres to refresh your memory\n "  +
+            MessageBox.Show("So The game is a drage and drop from Box B to Box A and when pressed next question itll calculate ypur score\n" +
+                "Here are the Game Answeres to refresh your memory\n"  +
                 "000 -General Knowledge \n" +
                 "100 - Philosophy & Psychology \n" +
                 "200 - Religion \n" +
