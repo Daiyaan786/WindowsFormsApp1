@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
         private ListBox fromBox;
         private int currentScore = 0;
         private int totalScore = 0;
+        private int elapsedTime = 0; // Counter for elapsed time
         public Form3()
         {
             InitializeComponent();
@@ -257,6 +258,10 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             this.ResetGame();
+          
+         
+           
+           
         }
 
         private void QuestionNumLbl_Click(object sender, EventArgs e)
@@ -288,6 +293,23 @@ namespace WindowsFormsApp1
         private void answerListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+       
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            elapsedTime++;
+            label9.Text = $"Total Time: {elapsedTime} seconds";
         }
     }
 }

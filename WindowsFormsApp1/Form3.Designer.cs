@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.label7 = new System.Windows.Forms.Label();
             this.scorePanel = new System.Windows.Forms.Panel();
@@ -63,6 +64,8 @@ namespace WindowsFormsApp1
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label9 = new System.Windows.Forms.Label();
             this.scorePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.questionsPanel.SuspendLayout();
@@ -512,12 +515,29 @@ namespace WindowsFormsApp1
             this.label8.TabIndex = 37;
             this.label8.Text = "Follow me on Social Media ";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(168, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Timer : ";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -533,6 +553,7 @@ namespace WindowsFormsApp1
             this.MaximizeBox = false;
             this.Name = "Form3";
             this.Text = "IdentifyingAreasScreen";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.scorePanel.ResumeLayout(false);
             this.scorePanel.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -576,5 +597,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label9;
     }
 }
