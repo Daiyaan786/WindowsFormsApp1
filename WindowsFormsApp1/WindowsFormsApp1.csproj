@@ -127,6 +127,7 @@
     <None Include="Resources\R.jpeg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\deweydecimal.jpg" />
     <Content Include="Resources\facebook.png" />
     <None Include="Resources\instagram.jpg" />
     <None Include="Resources\facebook2.png" />
