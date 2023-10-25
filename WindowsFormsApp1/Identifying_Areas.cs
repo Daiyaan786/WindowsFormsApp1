@@ -11,28 +11,27 @@ namespace WindowsFormsApp1
         //dictionary to store the callnumbers and their description
         private Dictionary<string, string> deweyDecimalsDictionary = new Dictionary<string, string>();
         private Dictionary<string, string> randomQuestionsDictionary = new Dictionary<string, string>();
-        String[] wrongAnswersArray = new String[3]; //list for wrong answers
-        //used to alternate between call numbers, and description questions
+        String[] wrongAnswersArray = new String[3]; 
         private int gameNumber = 0;
         Random random = new Random();
 
         //add call numbers and their descriptions to the dictionary
         public Identifying_Areas()
         {
-            DeweyDecimalsDictionary.Add("000-099", "General Knowledge");
-            DeweyDecimalsDictionary.Add("100-199", "Philosophy & Psychology");
-            DeweyDecimalsDictionary.Add("200-299", "Religion");
-            DeweyDecimalsDictionary.Add("300-399", "Social Sciences");
-            DeweyDecimalsDictionary.Add("400-499", "Languages");
-            DeweyDecimalsDictionary.Add("500-599", "Science");
-            DeweyDecimalsDictionary.Add("600-699", "Technology");
-            DeweyDecimalsDictionary.Add("700-799", "Arts & Recreation");
-            DeweyDecimalsDictionary.Add("800-899", "Literature");
-            DeweyDecimalsDictionary.Add("900-999", "History & Geography");
+            DeweyDecimalsDictionary.Add("000", "General Knowledge");
+            DeweyDecimalsDictionary.Add("100", "Philosophy & Psychology");
+            DeweyDecimalsDictionary.Add("200", "Religion");
+            DeweyDecimalsDictionary.Add("300", "Social Sciences");
+            DeweyDecimalsDictionary.Add("400", "Languages");
+            DeweyDecimalsDictionary.Add("500", "Science");
+            DeweyDecimalsDictionary.Add("600", "Technology");
+            DeweyDecimalsDictionary.Add("700", "Arts & Recreation");
+            DeweyDecimalsDictionary.Add("800", "Literature");
+            DeweyDecimalsDictionary.Add("900", "History & Geography");
         }
 
 
-        //gets and sets
+        //Ive generated Get and Set methods here
         public Dictionary<string, string> RandomQuestionsDictionary { get => randomQuestionsDictionary; set => randomQuestionsDictionary = value; }
         public int GameNumber { get => gameNumber; set => gameNumber = value; }
         public string[] WrongAnswersArray { get => wrongAnswersArray; set => wrongAnswersArray = value; }
@@ -41,7 +40,7 @@ namespace WindowsFormsApp1
 
 
 
-        //generate a random question using the Dewey Decimal Dictionary
+        //Generate Radom Questions linking it to the dictinonary 
         public void GenerateRandomQuestion()
         {
             int size = 0;
@@ -50,7 +49,7 @@ namespace WindowsFormsApp1
             RandomQuestionsDictionary.Clear();
             Dictionary<string, string> wrongAnsDicts = DeweyDecimalsDictionary;
 
-            //correct answe
+            
             for (int i = 0; i < 4; i++)
             {
                 size = wrongAnsDicts.Count;
@@ -59,19 +58,19 @@ namespace WindowsFormsApp1
                 RandomQuestionsDictionary.Add(answerToAdd.Key, answerToAdd.Value);
                 wrongAnsDicts.Remove(answerToAdd.Key);
             }
-            //wrong answers
+            
             for (int n = 0; n < 3; n++)
             {
                 size = wrongAnsDicts.Count;
                 rIndex = random.Next(size);
                 KeyValuePair<string, string> wrongAnswerToAdd = wrongAnsDicts.ElementAt(rIndex);
 
-                //even call numbers
+                
                 if (gameNumber % 2 == 0)
                 {
                     wrongAnswersArray[n] = wrongAnswerToAdd.Value;
                 }
-                //odd descriptions
+                
                 else
                 {
                     wrongAnswersArray[n] = wrongAnswerToAdd.Key.ToString();
@@ -81,8 +80,20 @@ namespace WindowsFormsApp1
         }
 
 
+        // Cross refrences the answers and validates it 
+        public bool ValidateAnswer(String key, String value)
+        {
+            bool isCorrect = false;
+            if (randomQuestionsDictionary.ContainsKey(key))
+            {
+                string correctValue = randomQuestionsDictionary[key];
+                if (value.Equals(correctValue)) isCorrect = true;
+            }
+            return isCorrect;
+        }
 
-        //randomly shuffle the answers of the question
+
+        //Ive created a method that the questions gets shuffeled around 
         public List<string> ShuffleAnswers(List<String> listToShuffle)
         {
             List<string> shuffledList = listToShuffle;
@@ -97,19 +108,6 @@ namespace WindowsFormsApp1
                 shuffledList[i] = value;
             }
             return shuffledList;
-        }
-
-
-        // Checks the answer dictionary
-        public bool ValidateAnswer(String key, String value)
-        {
-            bool isCorrect = false;
-            if (randomQuestionsDictionary.ContainsKey(key))
-            {
-                string correctValue = randomQuestionsDictionary[key];
-                if (value.Equals(correctValue)) isCorrect = true;
-            }
-            return isCorrect;
         }
 
     }
