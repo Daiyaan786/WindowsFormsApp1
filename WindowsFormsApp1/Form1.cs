@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
                 try
             { 
                     // Create a SoundPlayer instance and specify the path to your audio file.
-                    SoundPlayer player = new SoundPlayer(@"C:\Users\daiya\Downloads\Slow Smooth Soothing Instrumental Music for relaxing, studying, work relaxdaily N°063.wav");
+                    SoundPlayer player = new SoundPlayer(@"C:\Users\daiya\Desktop\PROG3BPART1\Slow Smooth Soothing Instrumental Music for relaxing, studying, work relaxdaily N°063.wav");
 
                     // Play the audio file.
                     player.Play();
