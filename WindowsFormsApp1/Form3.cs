@@ -165,7 +165,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        // check if the answer was correct
+    
         public void CheckAnswer()
         {
             int score = 0;
@@ -247,7 +247,7 @@ namespace WindowsFormsApp1
             CreateQuestion();
         }
 
-        // send user back to main page
+        
         private void Return_Click(object sender, EventArgs e)
         {
             this.Close();
