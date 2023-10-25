@@ -27,13 +27,13 @@ namespace WindowsFormsApp1
         // next question button to calculate score
         private void NextQuestionButton_Click(object sender, EventArgs e)
         {
-            totalScore += currentScore; // udpating score
+            totalScore += currentScore; 
             totalScoreLbl.Text = String.Format("{0}/{1}", totalScore, (gameNumber * 4));
             currentScoreLbl.Text = "0/4";
             CreateQuestion();
 
         }
-        // match the columns question
+        
         public void CreateQuestion()
         {
             this.gameNumber++; // increasing game number
@@ -46,10 +46,10 @@ namespace WindowsFormsApp1
         }
 
 
-        // match the columns question that was generated
+        
         public void SetupQuestion()
         {
-            currentScore = 0; //reset current score for next question
+            currentScore = 0;
             if (gameNumber % 2 == 0)
             {
                 // even numbers
@@ -60,7 +60,7 @@ namespace WindowsFormsApp1
                 answerList = identfiyingAreas.moveAround(answerList); // shuffle
                 SetupRightAnswers(answerList);
             }
-            //odd descriptions
+           
             else
             {
                 // questions
@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
         }
 
 
-        // left side of the questions set up
+        
         public void SetupLeftQuestions(String[] questions)
         {
             int count = 0;
@@ -88,7 +88,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        // setup the right side (answers)
+        
         public void SetupRightAnswers(List<String> answers)
         {
             answerListBox.Items.Clear();
@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        /// Drag and drop list boxxes 
+         
         private void Answer_MouseDown(object sender, MouseEventArgs e)
         {
             try
@@ -118,17 +118,17 @@ namespace WindowsFormsApp1
             }
         }
 
-        ///  Allowing list box dragging
+       
         private void ListBox_DragEnter(object sender, DragEventArgs e)
         {
             // data is text format
             if (e.Data.GetDataPresent(DataFormats.Text))
             {
-                e.Effect = DragDropEffects.Copy;
+                e.Effect = DragDropEffects.All;
             }
             else
             {
-                e.Effect = DragDropEffects.None;
+                e.Effect = DragDropEffects.All;
             }
         }
 
