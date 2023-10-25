@@ -48,6 +48,7 @@ namespace WindowsFormsApp1
         //Close application 
         private void QuitBtn1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Thank you Bye ", "Exit", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             this.Close();   
         }
 
@@ -59,18 +60,18 @@ namespace WindowsFormsApp1
         private void Identifying_Areas_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show("So The game is a drage and drop from Box B to Box A and when pressed next question itll calculate ypur score /nr" +
-                "Here are the Game Answeres to refresh your memory " +
-                "000 -General Knowledge" +
-                "100 - Philosophy & Psychology" +
-                "200 - Religion" +
-                "300 - Social Sciences" +
-                "400 - Languages" +
-                "500 - Science" +
-                "600 - Technology" +
-                "700 - Arts & Recreation" +
-                "800 - Literature" +
-                "900 - History & Geography", "How to play ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("So The game is a drage and drop from Box B to Box A and when pressed next question itll calculate ypur score \n" +
+                "Here are the Game Answeres to refresh your memory\n "  +
+                "000 -General Knowledge \n" +
+                "100 - Philosophy & Psychology \n" +
+                "200 - Religion \n" +
+                "300 - Social Sciences \n" +
+                "400 - Languages \n" +
+                "500 - Science \n" +
+                "600 - Technology \n" +
+                "700 - Arts & Recreation \n" +
+                "800 - Literature \n" +
+                "900 - History & Geography \n", "How to play ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Form3 f8= new Form3();
             f8.Show();
 
