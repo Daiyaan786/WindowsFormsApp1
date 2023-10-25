@@ -66,6 +66,7 @@ namespace WindowsFormsApp1
             this.label8 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label9 = new System.Windows.Forms.Label();
+            this.GameProgressBar = new System.Windows.Forms.ProgressBar();
             this.scorePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.questionsPanel.SuspendLayout();
@@ -534,12 +535,25 @@ namespace WindowsFormsApp1
             this.label9.Text = "Timer : ";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
+            // GameProgressBar
+            // 
+            this.GameProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.GameProgressBar.BackColor = System.Drawing.Color.Yellow;
+            this.GameProgressBar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.GameProgressBar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.GameProgressBar.Location = new System.Drawing.Point(107, 402);
+            this.GameProgressBar.Margin = new System.Windows.Forms.Padding(2);
+            this.GameProgressBar.Name = "GameProgressBar";
+            this.GameProgressBar.Size = new System.Drawing.Size(511, 31);
+            this.GameProgressBar.TabIndex = 52;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.GameProgressBar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
@@ -602,5 +616,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ProgressBar GameProgressBar;
     }
 }

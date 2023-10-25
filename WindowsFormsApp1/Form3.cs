@@ -20,10 +20,15 @@ namespace WindowsFormsApp1
         private int currentScore = 0;
         private int totalScore = 0;
         private int elapsedTime = 0; // Counter for elapsed time
+        private int score = 0;
+        
         public Form3()
         {
             InitializeComponent();
             ResetGame();
+
+            
+           
         }
 
         // next question button to calculate score
@@ -250,6 +255,8 @@ namespace WindowsFormsApp1
         }
 
         
+
+        
         private void Return_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -299,6 +306,14 @@ namespace WindowsFormsApp1
         private void Form3_Load(object sender, EventArgs e)
         {
             timer1.Start();
+
+            currentScore = score;
+            currentScoreLbl.Text = currentScore.ToString();
+
+            totalScore += score;
+            totalScoreLbl.Text = totalScore.ToString();
+
+            GameProgressBar.Value = totalScore;
         }
 
         private void label9_Click(object sender, EventArgs e)
