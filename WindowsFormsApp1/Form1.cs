@@ -88,5 +88,15 @@ namespace WindowsFormsApp1
         {
             Process.Start("https://www.facebook.com/daiyaan.marais");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.instagram.com/daiyaan135i/");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

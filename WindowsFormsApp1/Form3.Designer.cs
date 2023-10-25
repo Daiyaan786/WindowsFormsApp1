@@ -60,6 +60,8 @@ namespace WindowsFormsApp1
             this.Return = new System.Windows.Forms.Button();
             this.NextQuestionButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.scorePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.questionsPanel.SuspendLayout();
@@ -210,7 +212,7 @@ namespace WindowsFormsApp1
             this.questionsPanel.ColumnCount = 3;
             this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
             this.questionsPanel.Controls.Add(this.answer4ListBox, 2, 3);
             this.questionsPanel.Controls.Add(this.answer3ListBox, 2, 2);
             this.questionsPanel.Controls.Add(this.answer2ListBox, 2, 1);
@@ -242,7 +244,7 @@ namespace WindowsFormsApp1
             this.answer4ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer4ListBox.FormattingEnabled = true;
             this.answer4ListBox.ItemHeight = 18;
-            this.answer4ListBox.Location = new System.Drawing.Point(167, 170);
+            this.answer4ListBox.Location = new System.Drawing.Point(166, 171);
             this.answer4ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer4ListBox.Name = "answer4ListBox";
             this.answer4ListBox.Size = new System.Drawing.Size(146, 40);
@@ -259,7 +261,7 @@ namespace WindowsFormsApp1
             this.answer3ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer3ListBox.FormattingEnabled = true;
             this.answer3ListBox.ItemHeight = 18;
-            this.answer3ListBox.Location = new System.Drawing.Point(167, 115);
+            this.answer3ListBox.Location = new System.Drawing.Point(166, 115);
             this.answer3ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer3ListBox.Name = "answer3ListBox";
             this.answer3ListBox.Size = new System.Drawing.Size(146, 40);
@@ -276,7 +278,7 @@ namespace WindowsFormsApp1
             this.answer2ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer2ListBox.FormattingEnabled = true;
             this.answer2ListBox.ItemHeight = 18;
-            this.answer2ListBox.Location = new System.Drawing.Point(169, 59);
+            this.answer2ListBox.Location = new System.Drawing.Point(168, 61);
             this.answer2ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer2ListBox.Name = "answer2ListBox";
             this.answer2ListBox.Size = new System.Drawing.Size(142, 40);
@@ -405,7 +407,7 @@ namespace WindowsFormsApp1
             this.answer1ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer1ListBox.FormattingEnabled = true;
             this.answer1ListBox.ItemHeight = 18;
-            this.answer1ListBox.Location = new System.Drawing.Point(168, 6);
+            this.answer1ListBox.Location = new System.Drawing.Point(167, 7);
             this.answer1ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer1ListBox.Name = "answer1ListBox";
             this.answer1ListBox.Size = new System.Drawing.Size(144, 40);
@@ -470,12 +472,43 @@ namespace WindowsFormsApp1
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.instagram;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button2.Location = new System.Drawing.Point(666, 402);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(58, 46);
+            this.button2.TabIndex = 36;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.facebook1;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Image = global::WindowsFormsApp1.Properties.Resources.facebook;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button3.Location = new System.Drawing.Point(730, 402);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(58, 46);
+            this.button3.TabIndex = 35;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.NextQuestionButton);
             this.Controls.Add(this.Return);
@@ -528,5 +561,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button Return;
         private System.Windows.Forms.Button NextQuestionButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
