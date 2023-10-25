@@ -40,7 +40,7 @@ namespace WindowsFormsApp1
             QuestionNumLbl.Text = String.Format("Question {0}:", gameNumber);
             this.identfiyingAreas = new Identifying_Areas();
             this.identfiyingAreas.GameNumber = gameNumber;
-            this.identfiyingAreas.GenerateRandomQuestion(); // generating question
+            this.identfiyingAreas.RandomQuestion(); // generating question
             ClearAnswerBox();
             SetupQuestion();
         }

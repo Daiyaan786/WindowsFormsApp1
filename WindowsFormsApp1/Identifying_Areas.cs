@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
 
 
         //Generate Radom Questions linking it to the dictinonary 
-        public void GenerateRandomQuestion()
+        public void RandomQuestion()
         {
             int size = 0;
             int rIndex;
