@@ -213,7 +213,7 @@ namespace WindowsFormsApp1
             this.questionsPanel.ColumnCount = 3;
             this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
+            this.questionsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.questionsPanel.Controls.Add(this.answer4ListBox, 2, 3);
             this.questionsPanel.Controls.Add(this.answer3ListBox, 2, 2);
             this.questionsPanel.Controls.Add(this.answer2ListBox, 2, 1);
@@ -432,6 +432,7 @@ namespace WindowsFormsApp1
             this.answerListBox.Name = "answerListBox";
             this.answerListBox.Size = new System.Drawing.Size(263, 227);
             this.answerListBox.TabIndex = 6;
+            this.answerListBox.SelectedIndexChanged += new System.EventHandler(this.answerListBox_SelectedIndexChanged);
             this.answerListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answerListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
             this.answerListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Answer_MouseDown);

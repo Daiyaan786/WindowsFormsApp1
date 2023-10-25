@@ -274,10 +274,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://www.facebook.com");
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -287,6 +283,11 @@ namespace WindowsFormsApp1
         private void button2_Click_1(object sender, EventArgs e)
         {
             Process.Start("https://www.instagram.com/daiyaan135i/");
+        }
+
+        private void answerListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
