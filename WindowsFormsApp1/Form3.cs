@@ -254,10 +254,8 @@ namespace WindowsFormsApp1
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {this.Close();
-
-            Form3 f8 = new Form3();
-            f8.Show();
+        {
+            this.ResetGame();
         }
 
         private void QuestionNumLbl_Click(object sender, EventArgs e)

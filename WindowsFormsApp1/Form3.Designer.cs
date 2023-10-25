@@ -161,10 +161,10 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.questionsPanel);
             this.panel1.Controls.Add(this.answerListBox);
-            this.panel1.Location = new System.Drawing.Point(107, 114);
+            this.panel1.Location = new System.Drawing.Point(107, 57);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(504, 205);
+            this.panel1.Size = new System.Drawing.Size(618, 262);
             this.panel1.TabIndex = 26;
             // 
             // label6
@@ -174,7 +174,7 @@ namespace WindowsFormsApp1
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(343, 18);
+            this.label6.Location = new System.Drawing.Point(415, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 23);
@@ -188,7 +188,7 @@ namespace WindowsFormsApp1
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(82, 18);
+            this.label5.Location = new System.Drawing.Point(125, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 23);
@@ -217,7 +217,7 @@ namespace WindowsFormsApp1
             this.questionsPanel.Controls.Add(this.label2, 0, 1);
             this.questionsPanel.Controls.Add(this.label1, 0, 0);
             this.questionsPanel.Controls.Add(this.answer1ListBox, 2, 0);
-            this.questionsPanel.Location = new System.Drawing.Point(2, 43);
+            this.questionsPanel.Location = new System.Drawing.Point(12, 25);
             this.questionsPanel.Margin = new System.Windows.Forms.Padding(2);
             this.questionsPanel.Name = "questionsPanel";
             this.questionsPanel.RowCount = 4;
@@ -225,7 +225,7 @@ namespace WindowsFormsApp1
             this.questionsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.questionsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.questionsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.questionsPanel.Size = new System.Drawing.Size(269, 145);
+            this.questionsPanel.Size = new System.Drawing.Size(316, 220);
             this.questionsPanel.TabIndex = 7;
             // 
             // answer4ListBox
@@ -236,7 +236,7 @@ namespace WindowsFormsApp1
             this.answer4ListBox.Font = new System.Drawing.Font("Constantia", 9F);
             this.answer4ListBox.FormattingEnabled = true;
             this.answer4ListBox.ItemHeight = 14;
-            this.answer4ListBox.Location = new System.Drawing.Point(123, 117);
+            this.answer4ListBox.Location = new System.Drawing.Point(170, 182);
             this.answer4ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer4ListBox.Name = "answer4ListBox";
             this.answer4ListBox.Size = new System.Drawing.Size(139, 18);
@@ -253,7 +253,7 @@ namespace WindowsFormsApp1
             this.answer3ListBox.Font = new System.Drawing.Font("Constantia", 9F);
             this.answer3ListBox.FormattingEnabled = true;
             this.answer3ListBox.ItemHeight = 14;
-            this.answer3ListBox.Location = new System.Drawing.Point(124, 81);
+            this.answer3ListBox.Location = new System.Drawing.Point(171, 126);
             this.answer3ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer3ListBox.Name = "answer3ListBox";
             this.answer3ListBox.Size = new System.Drawing.Size(138, 18);
@@ -270,7 +270,7 @@ namespace WindowsFormsApp1
             this.answer2ListBox.Font = new System.Drawing.Font("Constantia", 9F);
             this.answer2ListBox.FormattingEnabled = true;
             this.answer2ListBox.ItemHeight = 14;
-            this.answer2ListBox.Location = new System.Drawing.Point(124, 45);
+            this.answer2ListBox.Location = new System.Drawing.Point(171, 72);
             this.answer2ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer2ListBox.Name = "answer2ListBox";
             this.answer2ListBox.Size = new System.Drawing.Size(138, 18);
@@ -284,7 +284,7 @@ namespace WindowsFormsApp1
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 117);
+            this.label4.Location = new System.Drawing.Point(3, 181);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(15, 19);
@@ -296,7 +296,7 @@ namespace WindowsFormsApp1
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 81);
+            this.label3.Location = new System.Drawing.Point(3, 126);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(15, 19);
@@ -308,7 +308,7 @@ namespace WindowsFormsApp1
             this.question4Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question4Lbl.AutoSize = true;
             this.question4Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold);
-            this.question4Lbl.Location = new System.Drawing.Point(23, 118);
+            this.question4Lbl.Location = new System.Drawing.Point(23, 182);
             this.question4Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question4Lbl.Name = "question4Lbl";
             this.question4Lbl.Size = new System.Drawing.Size(67, 17);
@@ -320,7 +320,7 @@ namespace WindowsFormsApp1
             this.question3Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question3Lbl.AutoSize = true;
             this.question3Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold);
-            this.question3Lbl.Location = new System.Drawing.Point(23, 82);
+            this.question3Lbl.Location = new System.Drawing.Point(23, 127);
             this.question3Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question3Lbl.Name = "question3Lbl";
             this.question3Lbl.Size = new System.Drawing.Size(67, 17);
@@ -332,7 +332,7 @@ namespace WindowsFormsApp1
             this.question2Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question2Lbl.AutoSize = true;
             this.question2Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold);
-            this.question2Lbl.Location = new System.Drawing.Point(23, 46);
+            this.question2Lbl.Location = new System.Drawing.Point(23, 73);
             this.question2Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question2Lbl.Name = "question2Lbl";
             this.question2Lbl.Size = new System.Drawing.Size(67, 17);
@@ -344,7 +344,7 @@ namespace WindowsFormsApp1
             this.question1Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question1Lbl.AutoSize = true;
             this.question1Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question1Lbl.Location = new System.Drawing.Point(23, 10);
+            this.question1Lbl.Location = new System.Drawing.Point(23, 19);
             this.question1Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question1Lbl.Name = "question1Lbl";
             this.question1Lbl.Size = new System.Drawing.Size(67, 17);
@@ -356,7 +356,7 @@ namespace WindowsFormsApp1
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 45);
+            this.label2.Location = new System.Drawing.Point(3, 72);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(15, 19);
@@ -368,7 +368,7 @@ namespace WindowsFormsApp1
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(3, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 19);
@@ -383,7 +383,7 @@ namespace WindowsFormsApp1
             this.answer1ListBox.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer1ListBox.FormattingEnabled = true;
             this.answer1ListBox.ItemHeight = 14;
-            this.answer1ListBox.Location = new System.Drawing.Point(124, 9);
+            this.answer1ListBox.Location = new System.Drawing.Point(171, 18);
             this.answer1ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer1ListBox.Name = "answer1ListBox";
             this.answer1ListBox.Size = new System.Drawing.Size(138, 18);
@@ -401,10 +401,10 @@ namespace WindowsFormsApp1
             this.answerListBox.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerListBox.FormattingEnabled = true;
             this.answerListBox.ItemHeight = 16;
-            this.answerListBox.Location = new System.Drawing.Point(276, 43);
+            this.answerListBox.Location = new System.Drawing.Point(333, 25);
             this.answerListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answerListBox.Name = "answerListBox";
-            this.answerListBox.Size = new System.Drawing.Size(224, 146);
+            this.answerListBox.Size = new System.Drawing.Size(272, 226);
             this.answerListBox.TabIndex = 6;
             this.answerListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answerListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
