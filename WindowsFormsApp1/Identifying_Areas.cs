@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
         }
 
 
-        //Ive created a method that the questions gets shuffeled around 
+        //Ive created a method that the questions gets moved around 
         public List<string> moveAround(List<String> listToShuffle)
         {
             List<string> shuffledList = listToShuffle;
