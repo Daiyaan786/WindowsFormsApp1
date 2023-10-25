@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Media;
@@ -81,6 +82,11 @@ namespace WindowsFormsApp1
         {
             //Message box Coming soon
             MessageBox.Show("404!", "COMING SOON", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.facebook.com/daiyaan.marais");
         }
     }
 }
