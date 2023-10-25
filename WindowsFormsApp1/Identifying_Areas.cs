@@ -81,7 +81,7 @@ namespace WindowsFormsApp1
 
 
         // Cross refrences the answers and validates it 
-        public bool ValidateAnswer(String key, String value)
+        public bool Validate(String key, String value)
         {
             bool isCorrect = false;
             if (randomQuestionsDictionary.ContainsKey(key))
@@ -94,7 +94,7 @@ namespace WindowsFormsApp1
 
 
         //Ive created a method that the questions gets shuffeled around 
-        public List<string> ShuffleAnswers(List<String> listToShuffle)
+        public List<string> moveAround(List<String> listToShuffle)
         {
             List<string> shuffledList = listToShuffle;
             int i = shuffledList.Count;

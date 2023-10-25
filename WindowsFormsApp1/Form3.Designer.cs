@@ -69,18 +69,19 @@ namespace WindowsFormsApp1
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(306, 324);
+            this.label7.BackColor = System.Drawing.Color.IndianRed;
+            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(292, 325);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 16);
+            this.label7.Size = new System.Drawing.Size(59, 17);
             this.label7.TabIndex = 31;
             this.label7.Text = "Score:";
             // 
             // scorePanel
             // 
             this.scorePanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.scorePanel.BackColor = System.Drawing.Color.Peru;
+            this.scorePanel.BackColor = System.Drawing.Color.IndianRed;
             this.scorePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.scorePanel.Controls.Add(this.currentScoreLbl);
             this.scorePanel.Controls.Add(this.totalScoreLbl);
@@ -89,14 +90,14 @@ namespace WindowsFormsApp1
             this.scorePanel.Location = new System.Drawing.Point(355, 324);
             this.scorePanel.Margin = new System.Windows.Forms.Padding(2);
             this.scorePanel.Name = "scorePanel";
-            this.scorePanel.Size = new System.Drawing.Size(122, 54);
+            this.scorePanel.Size = new System.Drawing.Size(173, 54);
             this.scorePanel.TabIndex = 30;
             // 
             // currentScoreLbl
             // 
             this.currentScoreLbl.AutoSize = true;
             this.currentScoreLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentScoreLbl.Location = new System.Drawing.Point(79, 28);
+            this.currentScoreLbl.Location = new System.Drawing.Point(132, 28);
             this.currentScoreLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentScoreLbl.Name = "currentScoreLbl";
             this.currentScoreLbl.Size = new System.Drawing.Size(14, 13);
@@ -107,32 +108,34 @@ namespace WindowsFormsApp1
             // 
             this.totalScoreLbl.AutoSize = true;
             this.totalScoreLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalScoreLbl.Location = new System.Drawing.Point(85, 7);
+            this.totalScoreLbl.Location = new System.Drawing.Point(132, 8);
             this.totalScoreLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalScoreLbl.Name = "totalScoreLbl";
             this.totalScoreLbl.Size = new System.Drawing.Size(14, 13);
             this.totalScoreLbl.TabIndex = 17;
             this.totalScoreLbl.Text = "0";
+            this.totalScoreLbl.Click += new System.EventHandler(this.totalScoreLbl_Click);
             // 
             // totalScoreTxtLbl
             // 
             this.totalScoreTxtLbl.AutoSize = true;
-            this.totalScoreTxtLbl.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalScoreTxtLbl.Location = new System.Drawing.Point(16, 7);
+            this.totalScoreTxtLbl.Font = new System.Drawing.Font("Broadway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalScoreTxtLbl.Location = new System.Drawing.Point(4, 8);
             this.totalScoreTxtLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.totalScoreTxtLbl.Name = "totalScoreTxtLbl";
-            this.totalScoreTxtLbl.Size = new System.Drawing.Size(65, 15);
+            this.totalScoreTxtLbl.Size = new System.Drawing.Size(89, 12);
             this.totalScoreTxtLbl.TabIndex = 16;
             this.totalScoreTxtLbl.Text = "Total Score:";
+            this.totalScoreTxtLbl.Click += new System.EventHandler(this.totalScoreTxtLbl_Click);
             // 
             // currentScoreTxtLbl
             // 
             this.currentScoreTxtLbl.AutoSize = true;
-            this.currentScoreTxtLbl.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentScoreTxtLbl.Font = new System.Drawing.Font("Broadway", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentScoreTxtLbl.Location = new System.Drawing.Point(6, 28);
             this.currentScoreTxtLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.currentScoreTxtLbl.Name = "currentScoreTxtLbl";
-            this.currentScoreTxtLbl.Size = new System.Drawing.Size(77, 15);
+            this.currentScoreTxtLbl.Size = new System.Drawing.Size(107, 12);
             this.currentScoreTxtLbl.TabIndex = 15;
             this.currentScoreTxtLbl.Text = "Current Score:";
             // 
@@ -140,9 +143,10 @@ namespace WindowsFormsApp1
             // 
             this.QuestionNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.QuestionNumLbl.AutoSize = true;
-            this.QuestionNumLbl.BackColor = System.Drawing.Color.White;
+            this.QuestionNumLbl.BackColor = System.Drawing.Color.Transparent;
             this.QuestionNumLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QuestionNumLbl.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold);
+            this.QuestionNumLbl.ForeColor = System.Drawing.Color.Yellow;
             this.QuestionNumLbl.Location = new System.Drawing.Point(355, 12);
             this.QuestionNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.QuestionNumLbl.Name = "QuestionNumLbl";
@@ -171,9 +175,10 @@ namespace WindowsFormsApp1
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
             this.label6.Location = new System.Drawing.Point(415, 0);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -185,9 +190,10 @@ namespace WindowsFormsApp1
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Yellow;
             this.label5.Location = new System.Drawing.Point(125, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -233,13 +239,13 @@ namespace WindowsFormsApp1
             this.answer4ListBox.AllowDrop = true;
             this.answer4ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.answer4ListBox.BackColor = System.Drawing.Color.LightBlue;
-            this.answer4ListBox.Font = new System.Drawing.Font("Constantia", 9F);
+            this.answer4ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer4ListBox.FormattingEnabled = true;
-            this.answer4ListBox.ItemHeight = 14;
-            this.answer4ListBox.Location = new System.Drawing.Point(170, 182);
+            this.answer4ListBox.ItemHeight = 18;
+            this.answer4ListBox.Location = new System.Drawing.Point(167, 170);
             this.answer4ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer4ListBox.Name = "answer4ListBox";
-            this.answer4ListBox.Size = new System.Drawing.Size(139, 18);
+            this.answer4ListBox.Size = new System.Drawing.Size(146, 40);
             this.answer4ListBox.TabIndex = 9;
             this.answer4ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answer4ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
@@ -250,13 +256,13 @@ namespace WindowsFormsApp1
             this.answer3ListBox.AllowDrop = true;
             this.answer3ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.answer3ListBox.BackColor = System.Drawing.Color.LightBlue;
-            this.answer3ListBox.Font = new System.Drawing.Font("Constantia", 9F);
+            this.answer3ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer3ListBox.FormattingEnabled = true;
-            this.answer3ListBox.ItemHeight = 14;
-            this.answer3ListBox.Location = new System.Drawing.Point(171, 126);
+            this.answer3ListBox.ItemHeight = 18;
+            this.answer3ListBox.Location = new System.Drawing.Point(167, 115);
             this.answer3ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer3ListBox.Name = "answer3ListBox";
-            this.answer3ListBox.Size = new System.Drawing.Size(138, 18);
+            this.answer3ListBox.Size = new System.Drawing.Size(146, 40);
             this.answer3ListBox.TabIndex = 8;
             this.answer3ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answer3ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
@@ -267,13 +273,13 @@ namespace WindowsFormsApp1
             this.answer2ListBox.AllowDrop = true;
             this.answer2ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.answer2ListBox.BackColor = System.Drawing.Color.LightBlue;
-            this.answer2ListBox.Font = new System.Drawing.Font("Constantia", 9F);
+            this.answer2ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer2ListBox.FormattingEnabled = true;
-            this.answer2ListBox.ItemHeight = 14;
-            this.answer2ListBox.Location = new System.Drawing.Point(171, 72);
+            this.answer2ListBox.ItemHeight = 18;
+            this.answer2ListBox.Location = new System.Drawing.Point(169, 59);
             this.answer2ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer2ListBox.Name = "answer2ListBox";
-            this.answer2ListBox.Size = new System.Drawing.Size(138, 18);
+            this.answer2ListBox.Size = new System.Drawing.Size(142, 40);
             this.answer2ListBox.TabIndex = 7;
             this.answer2ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answer2ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
@@ -283,7 +289,9 @@ namespace WindowsFormsApp1
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
             this.label4.Location = new System.Drawing.Point(3, 181);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -295,7 +303,9 @@ namespace WindowsFormsApp1
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Yellow;
             this.label3.Location = new System.Drawing.Point(3, 126);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -307,7 +317,9 @@ namespace WindowsFormsApp1
             // 
             this.question4Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question4Lbl.AutoSize = true;
+            this.question4Lbl.BackColor = System.Drawing.Color.Transparent;
             this.question4Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold);
+            this.question4Lbl.ForeColor = System.Drawing.Color.Yellow;
             this.question4Lbl.Location = new System.Drawing.Point(23, 182);
             this.question4Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question4Lbl.Name = "question4Lbl";
@@ -319,7 +331,9 @@ namespace WindowsFormsApp1
             // 
             this.question3Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question3Lbl.AutoSize = true;
+            this.question3Lbl.BackColor = System.Drawing.Color.Transparent;
             this.question3Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold);
+            this.question3Lbl.ForeColor = System.Drawing.Color.Yellow;
             this.question3Lbl.Location = new System.Drawing.Point(23, 127);
             this.question3Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question3Lbl.Name = "question3Lbl";
@@ -331,7 +345,9 @@ namespace WindowsFormsApp1
             // 
             this.question2Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question2Lbl.AutoSize = true;
+            this.question2Lbl.BackColor = System.Drawing.Color.Transparent;
             this.question2Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold);
+            this.question2Lbl.ForeColor = System.Drawing.Color.Yellow;
             this.question2Lbl.Location = new System.Drawing.Point(23, 73);
             this.question2Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question2Lbl.Name = "question2Lbl";
@@ -343,7 +359,9 @@ namespace WindowsFormsApp1
             // 
             this.question1Lbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.question1Lbl.AutoSize = true;
+            this.question1Lbl.BackColor = System.Drawing.Color.Transparent;
             this.question1Lbl.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.question1Lbl.ForeColor = System.Drawing.Color.Yellow;
             this.question1Lbl.Location = new System.Drawing.Point(23, 19);
             this.question1Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.question1Lbl.Name = "question1Lbl";
@@ -355,7 +373,9 @@ namespace WindowsFormsApp1
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
             this.label2.Location = new System.Drawing.Point(3, 72);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -367,7 +387,9 @@ namespace WindowsFormsApp1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(3, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -380,13 +402,13 @@ namespace WindowsFormsApp1
             this.answer1ListBox.AllowDrop = true;
             this.answer1ListBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.answer1ListBox.BackColor = System.Drawing.Color.LightBlue;
-            this.answer1ListBox.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer1ListBox.Font = new System.Drawing.Font("Constantia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer1ListBox.FormattingEnabled = true;
-            this.answer1ListBox.ItemHeight = 14;
-            this.answer1ListBox.Location = new System.Drawing.Point(171, 18);
+            this.answer1ListBox.ItemHeight = 18;
+            this.answer1ListBox.Location = new System.Drawing.Point(168, 6);
             this.answer1ListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answer1ListBox.Name = "answer1ListBox";
-            this.answer1ListBox.Size = new System.Drawing.Size(138, 18);
+            this.answer1ListBox.Size = new System.Drawing.Size(144, 40);
             this.answer1ListBox.TabIndex = 6;
             this.answer1ListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answer1ListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
@@ -398,13 +420,14 @@ namespace WindowsFormsApp1
             this.answerListBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.answerListBox.BackColor = System.Drawing.Color.LightBlue;
             this.answerListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.answerListBox.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerListBox.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answerListBox.ForeColor = System.Drawing.Color.Yellow;
             this.answerListBox.FormattingEnabled = true;
-            this.answerListBox.ItemHeight = 16;
+            this.answerListBox.ItemHeight = 25;
             this.answerListBox.Location = new System.Drawing.Point(333, 25);
             this.answerListBox.Margin = new System.Windows.Forms.Padding(2);
             this.answerListBox.Name = "answerListBox";
-            this.answerListBox.Size = new System.Drawing.Size(272, 226);
+            this.answerListBox.Size = new System.Drawing.Size(263, 227);
             this.answerListBox.TabIndex = 6;
             this.answerListBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.ListBox_DragDrop);
             this.answerListBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.ListBox_DragEnter);
@@ -413,7 +436,9 @@ namespace WindowsFormsApp1
             // Return
             // 
             this.Return.BackColor = System.Drawing.Color.Transparent;
+            this.Return.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.R;
             this.Return.Font = new System.Drawing.Font("Book Antiqua", 12F);
+            this.Return.ForeColor = System.Drawing.Color.Yellow;
             this.Return.Location = new System.Drawing.Point(12, 12);
             this.Return.Name = "Return";
             this.Return.Size = new System.Drawing.Size(109, 40);
@@ -424,13 +449,14 @@ namespace WindowsFormsApp1
             // 
             // NextQuestionButton
             // 
+            this.NextQuestionButton.BackColor = System.Drawing.Color.IndianRed;
             this.NextQuestionButton.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Bold);
-            this.NextQuestionButton.Location = new System.Drawing.Point(499, 324);
+            this.NextQuestionButton.Location = new System.Drawing.Point(616, 320);
             this.NextQuestionButton.Name = "NextQuestionButton";
-            this.NextQuestionButton.Size = new System.Drawing.Size(109, 40);
+            this.NextQuestionButton.Size = new System.Drawing.Size(109, 58);
             this.NextQuestionButton.TabIndex = 33;
             this.NextQuestionButton.Text = "Next Question";
-            this.NextQuestionButton.UseVisualStyleBackColor = true;
+            this.NextQuestionButton.UseVisualStyleBackColor = false;
             this.NextQuestionButton.Click += new System.EventHandler(this.NextQuestionButton_Click);
             // 
             // button1
@@ -438,7 +464,7 @@ namespace WindowsFormsApp1
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.Location = new System.Drawing.Point(107, 319);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 45);
+            this.button1.Size = new System.Drawing.Size(103, 59);
             this.button1.TabIndex = 34;
             this.button1.Text = "RESTART ";
             this.button1.UseVisualStyleBackColor = false;

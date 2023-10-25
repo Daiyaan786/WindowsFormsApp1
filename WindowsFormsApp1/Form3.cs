@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
                 SetupLeftQuestions(questionArray);
                 List<String> answerList = identfiyingAreas.RandomQuestionsDictionary.Values.ToList();
                 answerList.AddRange(identfiyingAreas.WrongAnswersArray);
-                answerList = identfiyingAreas.ShuffleAnswers(answerList); // shuffle
+                answerList = identfiyingAreas.moveAround(answerList); // shuffle
                 SetupRightAnswers(answerList);
             }
             //odd descriptions
@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
                 // answers combining the dictionary with wrong answers list
                 List<String> answerList = identfiyingAreas.RandomQuestionsDictionary.Keys.ToList();
                 answerList.AddRange(identfiyingAreas.WrongAnswersArray);
-                answerList = identfiyingAreas.ShuffleAnswers(answerList); // shuffle
+                answerList = identfiyingAreas.moveAround(answerList); // shuffle
                 SetupRightAnswers(answerList);
             }
         }
@@ -184,13 +184,13 @@ namespace WindowsFormsApp1
                     if (gameNumber % 2 == 0)
                     {
                         question = this.identfiyingAreas.RandomQuestionsDictionary.ElementAt(index).Key; //call num
-                        isCorrect = this.identfiyingAreas.ValidateAnswer(question, answer);
+                        isCorrect = this.identfiyingAreas.Validate(question, answer);
                     }
                     // odd will call descriptions
                     else
                     {
                         question = this.identfiyingAreas.RandomQuestionsDictionary.ElementAt(index).Value; //descr
-                        isCorrect = this.identfiyingAreas.ValidateAnswer(answer, question);
+                        isCorrect = this.identfiyingAreas.Validate(answer, question);
                     }
 
                     if (isCorrect == true)
@@ -259,6 +259,16 @@ namespace WindowsFormsApp1
         }
 
         private void QuestionNumLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalScoreTxtLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalScoreLbl_Click(object sender, EventArgs e)
         {
 
         }
