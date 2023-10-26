@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    class Identifying_Areas
+    class areaIdentify
     {
         //dictionary to store the callnumbers and their description
         private Dictionary<string, string> deweyDecimalsDictionary = new Dictionary<string, string>();
@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         Random random = new Random();
 
         //add call numbers and their descriptions to the dictionary
-        public Identifying_Areas()
+        public areaIdentify()
         {
             DeweyDecimalsDictionary.Add("000", "General Knowledge");
             DeweyDecimalsDictionary.Add("100", "Philosophy & Psychology");

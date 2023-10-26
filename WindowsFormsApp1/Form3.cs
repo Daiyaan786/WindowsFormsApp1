@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form3 : Form
     {
-        private Identifying_Areas identfiyingAreas;
+        private areaIdentify identfiyingAreas;
         private int gameNumber = 0;
         private object listItem;
         private ListBox fromBox;
@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
         {
             this.gameNumber++; // increasing game number
             QuestionNumLbl.Text = String.Format("Question {0}:", gameNumber);
-            this.identfiyingAreas = new Identifying_Areas();
+            this.identfiyingAreas = new areaIdentify();
             this.identfiyingAreas.GameNumber = gameNumber;
             this.identfiyingAreas.RandomQuestion(); // generating question
             ClearAnswerBox();
