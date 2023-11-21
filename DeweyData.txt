@@ -1,77 +1,77 @@
 000_Generalities
-030_General encyclopedic works
-031_General encyclopedic works — American 
-032_General encyclopedic works in English 
-033_General encyclopedic works in other Germanic languages 
-034_General encyclopedic works in French, Provencal, Catalan
-050_General serials & their indexes
-051_General serials & their indexes American 
-052_General serials & their indexes In English 
-053_General serials & their indexes In other Germanic languages
-054_General serials & their indexes In French, Provencal, Catalan
-060_General organization & museology
-061_General organization & museology In North America 
-062_General organization & museology In British Isles In England 
-063_General organization & museology In central Europe In Germany 
-064_General organization & museology In France & Monaco
-070_News media, journalism, publishing
-071_News media, journalism, publishing In North America 
-072_News media, journalism, publishing In British Isles In England 
-073_News media, journalism, publishing In central Europe In Germany 
-074_News media, journalism, publishing In France & Monaco
+030_Universal encyclopedic works
+031_Universal encyclopedic works — United States
+032_Universal encyclopedic works in the English language
+033_Universal encyclopedic works in other Germanic tongues
+034_Universal encyclopedic works in French, Occitan, Catalan
+050_Global periodicals & their indices
+051_Global periodicals & their indices United States
+052_Global periodicals & their indices In the English language
+053_Global periodicals & their indices In other Germanic tongues
+054_Global periodicals & their indices In French, Occitan, Catalan
+060_Global organization & museology
+061_Global organization & museology In North America
+062_Global organization & museology In the British Isles In England
+063_Global organization & museology In Central Europe In Germany
+064_Global organization & museology In France & Monaco
+070_Media, journalism, publishing
+071_Media, journalism, publishing In North America
+072_Media, journalism, publishing In the British Isles In England
+073_Media, journalism, publishing In Central Europe In Germany
+074_Media, journalism, publishing In France & Monaco
 100_Philosophy & psychology
 150_Psychology
-152_Perception, movement, emotions, drives
-153_Mental processes & intelligence
-154_Subconscious & altered states
+152_Sensation, motion, sentiments, impulses
+153_Cognitive processes & intellect
+154_Subconscious & modified states
 155_Differential & developmental psychology
-160_Logic
-161_Induction
-162_Deduction
-165_Fallacies & sources of error
+160_Reasoning
+161_Deduction
+162_Induction
+165_Fallacies & origins of mistake
 166_Syllogisms
-170_Ethics
-171_Systems & doctrines
-172_Political ethics
-173_Ethics of family relationships
-174_Economic & professional ethics
-180_Ancient, medieval, Oriental philosophy
-181_Oriental philosophy
-182_Pre-Socratic Greek philosophies
-183_Sophistic & Socratic philosophies
-184_Platonic philosophy
-200_Religion
-210_Natural theology
-211_Concepts of God
-212_Existence, attributes of God
-213_Creation
+170_Morals
+171_Systems & tenets
+172_Political morals
+173_Morals of family connections
+174_Economic & professional morals
+180_Ancient, medieval, Eastern philosophy
+181_Eastern philosophy
+182_Ancient Greek philosophies before Socrates
+183_Sophistic & Socratic thoughts
+184_Platonic philosophical ideas
+200_Faith
+210_Rational theology
+211_Ideas of the Divine
+212_Existence, characteristics of the Divine
+213_Formation
 214_Theodicy
 220_Bible
 221_Old Testament
-222_Historical books of Old Testament
-223_Poetic books of Old Testament
-224_Prophetic books of Old Testament
+222_Historical books of the Old Testament
+223_Poetic books of the Old Testament
+224_Prophetic books of the Old Testament
 230_Christian theology
-231_God
-232_Jesus Christ & his family
-233_Humankind
-234_Salvation & grace
+231_Deity
+232_Jesus Christ & his kin
+233_Humanity
+234_Rescue & benevolence
 240_Christian moral & devotional theology
 241_Moral theology
-242_Devotional literature
+242_Spiritual literature
 243_Evangelistic writings for individuals
-245_Texts of hymns
+245_Words of hymns
 300_Social sciences
-310_General statistics, Almanacs
-314_General statistics of Europe
-315_General statistics of Asia
-316_General statistics of Africa
-317_General statistics of North America
+310_Universal statistics, Almanacs
+314_Universal statistics of Europe
+315_Universal statistics of Asia
+316_Universal statistics of Africa
+317_Universal statistics of North America
 320_Political science
-321_Systems of governments & states
+321_Systems of governance & nations
 322_Relation of state to organized groups
-323_Civil & political rights
-324_The political process
+323_Civil & political entitlements
+324_The political progression
 330_Economics
 331_Labor economics
 332_Financial economics
@@ -81,70 +81,70 @@
 341_International law
 342_Constitutional & administrative law
 343_Military, tax, trade, industrial law
-344_Social, labor, welfare, & related law
+344_Social, labor, welfare, & linked law
 400_Language
 410_Linguistics
 411_Writing systems
-412_Etymology, word origins
+412_Etymology, word beginnings
 413_Dictionaries
-414_Phonology
+414_Phonetics
 420_English & Old English
-421_English writing system & phonology
-422_English etymology, word origins
+421_English writing system & phonetics
+422_English etymology, word beginnings
 423_English dictionaries
-425_English grammar
+425_English syntax
 430_Germanic languages; German
-431_German writing system & phonology
+431_German writing system & phonetics
 432_German etymology
 433_German dictionaries
-435_German grammar
+435_German syntax
 440_Romance languages; French
-441_French writing system & phonology
+441_French writing system & phonetics
 442_French etymology
 443_French dictionaries
-445_French grammar
+445_French syntax
 500_Natural sciences & mathematics
 510_Mathematics
-511_General topics
+511_Common subjects
 512_Algebra & number theory
 513_Arithmetic
-514_Topology
-520_Astronomy & allied sciences
+514_Topography
+520_Astronomy & related sciences
 521_Celestial mechanics
-522_Techniques, equipment, materials
+522_Techniques, gear, materials
 523_Specific celestial bodies & phenomena
 525_Earth
 530_Physics
 531_Classical mechanics; Solid mechanics
 532_Fluid mechanics; Liquid mechanics
 533_Gas mechanics
-534_Sound & related vibrations
-540_Chemistry & allied sciences
+534_Sound & related oscillations
+540_Chemistry & related sciences
 541_Physical & theoretical chemistry
-542_Techniques, equipment, materials
-543_Analytical chemistry
-544_Qualitative analysis
+542_Techniques, gear, materials
+543_Analytic chemistry
+544_Qualitative examination
 600_Technology
 610_Medical sciences; Medicine
 611_Human anatomy, cytology, histology
 612_Human physiology
-613_Promotion of health
-614_Incidence & prevention of disease
-620_Engineering & allied operations
+613_Promotion of well-being
+614_Incidence & prevention of malady
+620_Engineering & related activities
 621_Applied physics
-622_Mining & related operations
-623_Military & nautical engineering
+622_Mining & related activities
+623_Military & maritime engineering
 624_Civil engineering
 630_Agriculture
-631_Techniques, equipment, materials
+631_Techniques, gear, materials
 632_Plant injuries, diseases, pests
 633_Field & plantation crops
 634_Orchards, fruits, forestry
-640_Home economics & family living
-641_Food & drink
-642_Meals & table service
-643_Housing & household equipment
-644_Household utilities
+640_Home economics & familial living
+641_Food & beverage
+642_Meals & table amenities
+643_Living accommodations & household equipment
+644_Household services
 700_The arts
 710_Civic & landscape art
 711_Area planning (Civic art)
@@ -153,58 +153,58 @@
 714_Water features
 720_Architecture
 721_Architectural structure
-722_Architecture to ca   300
-723_Architecture from ca   300 to 1399
+722_Architecture to approximately 300
+723_Architecture from approximately 300 to 1399
 724_Architecture from 1400
 730_Plastic arts; Sculpture
 731_Processes, forms, subjects of sculpture
-732_Sculpture to ca   500
+732_Sculpture to approximately 500
 733_Greek, Etruscan, Roman sculpture
-734_Sculpture from ca   500 to 1399
+734_Sculpture from approximately 500 to 1399
 740_Drawing & decorative arts
-741_Drawing & drawings
+741_Sketching & sketches
 742_Perspective
-743_Drawing & drawings by subject
+743_Drawing & drawings by theme
 745_Decorative arts
-800_Literature & rhetoric
+800_Literature & oratory
 810_American or Canadian literature in English
-811_Poetry
-812_Drama
-813_Fiction
-814_Essays
+811_Verses
+812_Theater
+813_Narrative
+814_Compositions
 820_English literature in English
-821_Poetry
-822_Drama
-823_Fiction
-824_Essays
+821_Verses
+822_Theater
+823_Narrative
+824_Compositions
 830_Literatures of Germanic languages
 831_German poetry
-832_German drama
+832_German theater
 833_German fiction
-834_German essays
+834_German compositions
 840_Literatures of Romance languages
 841_French poetry
-842_French drama
+842_French theater
 843_French fiction
-844_French essays
-900_Geography & history
+844_French compositions
+900_Geography & chronicles
 910_Geography & travel
 911_Historical geography
-912_Graphic representations of earth, atlases
-913_Ancient world
+912_Graphic representations of Earth, atlases
+913_Ancient universe
 914_Europe
-930_History of ancient world
+930_Chronicles of the ancient universe
 931_China
 932_Egypt
 933_Palestine
 934_India
-940_General history of Europe
+940_Global chronicles of Europe
 941_British Isles
 942_England & Wales
 943_Central Europe; Germany
 944_France & Monaco
-950_General history of Asia Far East
-951_General history of Asia China & adjacent areas 
-952_General history of Asia Japan 
-953_General history of Asia Arabian Peninsula & adjacent areas 
-954_General history of Asia South Asia India
+950_Global chronicles of Asia Far East
+951_Global chronicles of Asia China & surrounding regions
+952_Global chronicles of Asia Japan
+953_Global chronicles of Asia Arabian Peninsula & surrounding regions
+954_Global chronicles of Asia South Asia India

@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace Prog7312POETask1.Classes
+namespace WindowsFormsApp1
 {
     public class BookTreeModel
     {
-        //******************************************************************************************************************//
-        /// <summary>
-        /// Tree structure being created
-        /// </summary>
+        
+        //Ive created a tree structure 
+        
         public BookTreeModel()
         {
             Category = String.Empty;
             Children = new List<BookTreeModel>();
         }
+        //index
         public int Index { get; set; }
+        //category
         public String Category { get; set; }
+        //children
         public List<BookTreeModel> Children { get; set; }
     }
-    //*********************************************************ooo CLASS END ooo*********************************************************//
 }
-//*********************************************************ooo APP END ooo*********************************************************//

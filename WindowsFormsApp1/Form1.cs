@@ -81,7 +81,10 @@ namespace WindowsFormsApp1
         private void Find_Call_Numbers_Click(object sender, EventArgs e)
         {
             //Message box Coming soon
-            MessageBox.Show("404!", "COMING SOON", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+
+            MessageBox.Show("Welcome to finiding numbers where your brain will be tested ","Finding Numbers", MessageBoxButtons.OK);
+            Form4 f9 = new Form4();
+            f9.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
